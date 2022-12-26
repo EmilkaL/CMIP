@@ -10,7 +10,7 @@ def main(phrase):
                 for b2 in range(1, 34):
                     phrase_decode = cipher.decode(phrase, a1=a1, b1=b1, a2=a2, b2=b2)
                     IC_ = count(phrase_decode)
-                    if 0.05 < IC_ and IC_ < 0.06 or a1==1 and b1==5 and a2 == 2 and b2==7:
+                    if 0.05 < IC_ and IC_ < 0.06:
                         print(a1, b1, a2, b2, phrase_decode, IC_)
 
 
